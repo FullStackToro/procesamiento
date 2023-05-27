@@ -8,6 +8,8 @@ import { LoginComponent } from './views/login/login.component';
 import { BillingSummaryComponent } from './views/billing-summary/billing-summary.component';
 import { DashboardComponent } from './views/dashboard/dashboard.component';
 import { TableAndParametersComponent } from './views/table-and-parameters/table-and-parameters.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { HeaderComponent } from './components/header/header.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { TableAndParametersComponent } from './views/table-and-parameters/table-
     LoginComponent,
     BillingSummaryComponent,
     DashboardComponent,
-    TableAndParametersComponent
+    TableAndParametersComponent,
+    FooterComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
