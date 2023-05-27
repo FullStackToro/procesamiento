@@ -16,7 +16,10 @@
 ## Mock up del proyecto
 
 <figure>     
-    <img src="vistas/inicio_sesion.png"      alt="Albuquerque, New Mexico" width=40% height=40%>     
+    <img src="vistas/01_inicio_sesion.png"      alt="Albuquerque, New Mexico" width=60% height=60%>     
     <figcaption>Flujo 1. Mock up inicio de sesión.</figcaption> 
 </figure>
 
+
+## Generar componentes en front
+- `ng generate component sidebar`: Genera un componente en front llamado sidebar.

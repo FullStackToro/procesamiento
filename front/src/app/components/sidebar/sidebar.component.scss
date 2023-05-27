@@ -1,8 +1,40 @@
 .sidebar {
+
     padding: 15px;
-    background: gray;
+    background: #444444;
     display: inline-block;
-    height: 100vw;
+    height: 40vw;
     vertical-align: top;
     color: white;
+    position: relative;
 }
+
+p{
+    padding: 0px;
+    margin-top: 3px;
+}
+
+.img-home{
+    background-color: #444444;
+    background-image: url("../../../assets/icons/home.png");
+    background-repeat: no-repeat;
+    background-position: 3px;
+    width: 35px;
+    height: 35px;
+}
+
+.icon-bottom{
+    position: absolute;    
+    bottom: 0px;
+}
+
+.img-help{
+    background-color: #444444;
+    background-image: url("../../../assets/icons/help.png");
+    background-repeat: no-repeat;
+    background-position: 3px;
+    width: 35px;
+    height: 35px;    
+}
+
+
