@@ -4,7 +4,6 @@ import { LoginComponent } from './views/login/login.component';
 import { BillingSummaryComponent } from './views/billing-summary/billing-summary.component';
 import { TableAndParametersComponent } from './views/table-and-parameters/table-and-parameters.component';
 
-
 const routes: Routes = [
   {path:'', redirectTo:"login", pathMatch:'full'},
   {path:"login", component: LoginComponent},
@@ -16,4 +15,5 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
+
 export class AppRoutingModule { }
