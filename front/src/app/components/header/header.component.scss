@@ -1,0 +1,22 @@
+.header{
+    border-bottom: 1px solid gray;
+    height: 35px;
+}
+
+.img-header{
+    display: inline-block;
+    background-color: black;
+    background-image: url("../../../assets/icons/logo.png");
+    background-repeat: no-repeat;
+    background-position: 3px;
+    align-items: center;
+    height: 35px;
+    width: 30px;
+}
+h1{
+    position:fixed;
+    display: inline-block;
+    margin: 0px;
+    margin-left: 20px;
+    align-items: center;
+}
