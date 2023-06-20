@@ -1,1 +1,81 @@
-<app-sidebar></app-sidebar><p style="display: inline-block;">billing-summary works!</p>
+<app-sidebar></app-sidebar>
+<section>
+    <div class="top_section">
+        <img src="../../../assets/img/temuco_logo.png" alt="" class="logo">
+        
+        <h3 class="sesion">Sesión iniciada</h3>
+        <div class="section_salir">
+            <button (click)="logout()"class="btn">Salir</button>
+        </div>
+    </div>
+
+    <div class="tab">
+    <button class="tablinks" (click)="openCity('event', 'London')">Resumen Facturación</button>
+    <button class="tablinks" (click)="openCity('event', 'Paris')">Dashboard</button>
+    <button class="tablinks" (click)="openCity('event', 'Tokyo')">Tablas y Parámetros</button>
+    </div>
+
+    <div id="London" class="tabcontent">
+    <h3>London</h3>
+    <p>London is the capital city of England.</p>
+    </div>
+
+    <div id="Paris" class="tabcontent">
+    <h3>Paris</h3>
+    <p>Paris is the capital of France.</p> 
+    </div>
+
+    <div id="Tokyo" class="tabcontent">
+    <h3>Tokyo</h3>
+    <p>Tokyo is the capital of Japan.</p>
+    </div>
+
+    <section class="filter">
+        <select name="month" id="months">
+            <option value="Mes">Mes</option>
+            <option value="saab">Enero</option>
+            <option value="opel">Febrero</option>
+            <option value="audi">Marzo</option>
+            <option value="saab">Abril</option>
+            <option value="opel">Mayo</option>
+            <option value="audi">Junio</option>
+            <option value="saab">Julio</option>
+            <option value="opel">Agosto</option>
+            <option value="audi">Septiebre</option>
+            <option value="saab">Octubre</option>
+            <option value="opel">Noviembre</option>
+            <option value="audi">Diciembre</option>
+        </select>
+        <select name="year" id="years" class="year_filter">
+            <option value="Year">Año</option>
+            <option value="2023">2023</option>
+            <option value="2022">2022</option>
+            <option value="2021">2021</option>
+            <option value="2020">2020</option>
+            <option value="2019">2019</option>
+            <option value="2018">2018</option>
+        </select>
+        
+    </section>
+    <p class="title_one">Clasificación por tárifa</p>
+    <section class="section_inputs">
+        <input type="text" placeholder="Tarifa BT1">
+        <input type="text" placeholder="Tarifa BT2">
+        <input type="text" placeholder="Tarifa AT">
+        <input type="text" placeholder="Otra tarifa">
+    </section>
+    <p class="title_two">Sistema estadistico</p>
+    <section class="section_inputs_two">    
+        <input type="text" placeholder="Tarifa BT1">
+        <input type="text" placeholder="Tarifa BT2">
+        <input type="text" placeholder="Tarifa AT">
+        <input type="text" placeholder="Otra tarifa">
+    </section>
+    <p class="title_three">Procesamiento de informacion</p>
+    <section class="section_inputs_three">    
+        <input type="text" placeholder="Tarifa BT1">
+        <input type="text" placeholder="Tarifa BT2">
+        <input type="text" placeholder="Tarifa AT">
+        <input type="text" placeholder="Otra tarifa">
+    </section>
+</section>
