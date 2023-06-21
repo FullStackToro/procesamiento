@@ -1,45 +1,43 @@
 section {
-    font-family: Arial;
-    display: inline-block;
-    width: 94%;
-    
+  font-family: Arial;
+  display: inline-block;
+  width: 94%;  
 }
 
 .top_section {
-    display: flex;
-    
-    align-items: center;
-
+  display: flex;
+  align-items: center;
 }
 
 .logo {
-    display: inline;
-    width: 300px;
-    height: 70px;
+  display: inline;
+  width: 300px;
+  height: 70px;
 }
 
 .sesion {
     display: inline-block;
-    width: 300px;
-    margin-left: 100px;
-    color: gray;
-    font-weight: 1;
+  width: 300px;
+  margin-left: 100px;
+  color: gray;
+  font-weight: 1;
 }
 
 .btn {
-    width: 200px;
-    height: 50px;
-    border-radius: 25px;
-    background: #303434;
-    color: white;
-    border: none;
-    cursor: pointer;
+  width: 200px;
+  height: 50px;
+  border-radius: 25px;
+  background: #303434;
+  color: white;
+  border: none;
+  cursor: pointer;
 }
 
 .section_salir {
-    display: inline;
-    float: right;
-    margin-left: 450px;
+  display: inline;
+  float: right;
+  margin-left: 450px;
+  cursor: pointer;
 }
 
 /* Style the tab */

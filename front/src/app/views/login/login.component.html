@@ -1,11 +1,31 @@
 <app-sidebar class="sidebar"></app-sidebar>
+<section>
+    <div class="top_section">
+        <img src="../../../assets/img/temuco_logo.png" alt="" class="logo">
+    </div>
 
-<div class="col main_content">
-    <app-header></app-header>
-    <h2>Servicio de Procesamiento de información | Municipalidad de Temuco | Dirección de Operaciones</h2>
-    <h3>Ingresar:</h3>
-    <input placeholder="Usuario" type="text" id="1" name="usuario">
-    <input placeholder="contraseña" type="password" id="2" name="contraseña">
-    <button routerLink="/billing" type="button">Ingresar</button>
-</div>
+    <div class="col main_content">
+        <div>
+            <h2>Servicio de Procesamiento de información | Municipalidad de Temuco | Dirección de Operaciones</h2>
+        </div>
+        
+
+        
+        <div class="container">
+            <h3>Ingresar:</h3>
+            <form action="action_page.php">
+              <input type="text" id="fname" name="user" placeholder="Usuario">
+              <input type="text" id="lname" name="password" placeholder="Contraseña">
+          
+              <input routerLink="/billing" type="submit" value="Ingresar">
+            </form>
+          </div> 
+
+
+    </div>
+
+</section>
+
+
+
 
