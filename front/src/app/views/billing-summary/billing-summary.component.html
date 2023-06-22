@@ -10,9 +10,9 @@
     </div>
 
     <div class="tab">
-    <button class="tablinks" (click)="openCity('event', 'London')">Resumen Facturación</button>
-    <button class="tablinks" (click)="openCity('event', 'Paris')">Dashboard</button>
-    <button class="tablinks" (click)="openCity('event', 'Tokyo')">Tablas y Parámetros</button>
+        <button class="tablinks" (click)="showView('showResumenFacturacion')" >Resumen 111Facturación</button>
+        <button class="tablinks" (click)="showView('showDashboard')">Dashboard</button>
+        <button class="tablinks" (click)="showView('showTablasyParametros')">Tablas y Parámetros</button>
     </div>
 
     <div id="London" class="tabcontent">
@@ -30,52 +30,62 @@
     <p>Tokyo is the capital of Japan.</p>
     </div>
 
-    <section class="filter">
-        <select name="month" id="months">
-            <option value="Mes">Mes</option>
-            <option value="saab">Enero</option>
-            <option value="opel">Febrero</option>
-            <option value="audi">Marzo</option>
-            <option value="saab">Abril</option>
-            <option value="opel">Mayo</option>
-            <option value="audi">Junio</option>
-            <option value="saab">Julio</option>
-            <option value="opel">Agosto</option>
-            <option value="audi">Septiebre</option>
-            <option value="saab">Octubre</option>
-            <option value="opel">Noviembre</option>
-            <option value="audi">Diciembre</option>
-        </select>
-        <select name="year" id="years" class="year_filter">
-            <option value="Year">Año</option>
-            <option value="2023">2023</option>
-            <option value="2022">2022</option>
-            <option value="2021">2021</option>
-            <option value="2020">2020</option>
-            <option value="2019">2019</option>
-            <option value="2018">2018</option>
-        </select>
-        
+    <section *ngIf="showResumenFacturacion === true">
+
+        <section class="filter">
+            <select name="month" id="months">
+                <option value="Mes">Mes</option>
+                <option value="saab">Enero</option>
+                <option value="opel">Febrero</option>
+                <option value="audi">Marzo</option>
+                <option value="saab">Abril</option>
+                <option value="opel">Mayo</option>
+                <option value="audi">Junio</option>
+                <option value="saab">Julio</option>
+                <option value="opel">Agosto</option>
+                <option value="audi">Septiebre</option>
+                <option value="saab">Octubre</option>
+                <option value="opel">Noviembre</option>
+                <option value="audi">Diciembre</option>
+            </select>
+            <select name="year" id="years" class="year_filter">
+                <option value="Year">Año</option>
+                <option value="2023">2023</option>
+                <option value="2022">2022</option>
+                <option value="2021">2021</option>
+                <option value="2020">2020</option>
+                <option value="2019">2019</option>
+                <option value="2018">2018</option>
+            </select>
+            
+        </section>
+        <p class="title_one">Clasificación por tárifa</p>
+        <section class="section_inputs">
+            <input type="text" placeholder="Tarifa BT1">
+            <input type="text" placeholder="Tarifa BT2">
+            <input type="text" placeholder="Tarifa AT">
+            <input type="text" placeholder="Otra tarifa">
+        </section>
+        <p class="title_two">Sistema estadistico</p>
+        <section class="section_inputs_two">    
+            <input type="text" placeholder="Tarifa BT1">
+            <input type="text" placeholder="Tarifa BT2">
+            <input type="text" placeholder="Tarifa AT">
+            <input type="text" placeholder="Otra tarifa">
+        </section>
+        <p class="title_three">Procesamiento de informacion</p>
+        <section class="section_inputs_three">    
+            <input type="text" placeholder="Tarifa BT1">
+            <input type="text" placeholder="Tarifa BT2">
+            <input type="text" placeholder="Tarifa AT">
+            <input type="text" placeholder="Otra tarifa">
+        </section>
     </section>
-    <p class="title_one">Clasificación por tárifa</p>
-    <section class="section_inputs">
-        <input type="text" placeholder="Tarifa BT1">
-        <input type="text" placeholder="Tarifa BT2">
-        <input type="text" placeholder="Tarifa AT">
-        <input type="text" placeholder="Otra tarifa">
+
+    <section *ngIf="showDashboard === true">
+        Dashboard
     </section>
-    <p class="title_two">Sistema estadistico</p>
-    <section class="section_inputs_two">    
-        <input type="text" placeholder="Tarifa BT1">
-        <input type="text" placeholder="Tarifa BT2">
-        <input type="text" placeholder="Tarifa AT">
-        <input type="text" placeholder="Otra tarifa">
-    </section>
-    <p class="title_three">Procesamiento de informacion</p>
-    <section class="section_inputs_three">    
-        <input type="text" placeholder="Tarifa BT1">
-        <input type="text" placeholder="Tarifa BT2">
-        <input type="text" placeholder="Tarifa AT">
-        <input type="text" placeholder="Otra tarifa">
+    <section *ngIf="showTablasyParametros === true">
+        Tablas y Parámetros
     </section>
 </section>

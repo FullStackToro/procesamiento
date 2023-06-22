@@ -10,6 +10,7 @@ import { DashboardComponent } from './views/dashboard/dashboard.component';
 import { TableAndParametersComponent } from './views/table-and-parameters/table-and-parameters.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HeaderComponent } from './components/header/header.component';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { HeaderComponent } from './components/header/header.component';
   ],
   imports: [
     BrowserModule,
+    CommonModule,
     AppRoutingModule
   ],
   providers: [],

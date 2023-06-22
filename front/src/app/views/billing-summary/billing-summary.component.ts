@@ -8,20 +8,33 @@ import { Router } from '@angular/router';
 })
 export class BillingSummaryComponent {
 
+  showResumenFacturacion = true;
+  showDashboard = false;
+  showTablasyParametros = false;
+  
   constructor(private readonly router:Router){}
 
-  openCity(evt:any, cityName:any) {
-    var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-      // tabcontent[i].style.display = "none";
+  showView(viewSelected:string) {
+    switch (viewSelected) {
+      case 'showResumenFacturacion':
+        this.showResumenFacturacion = true;
+        this.showDashboard = false;
+        this.showTablasyParametros = false;
+        break;
+      case 'showDashboard':
+        this.showResumenFacturacion = false;
+        this.showDashboard = true;
+        this.showTablasyParametros = false;
+        break
+      case 'showTablasyParametros':
+        this.showResumenFacturacion = false;
+        this.showDashboard = false;
+        this.showTablasyParametros = true;
+        break
+      default:
+        break;
     }
-    tablinks = document.getElementsByClassName("tablinks");
-    for (i = 0; i < tablinks.length; i++) {
-      tablinks[i].className = tablinks[i].className.replace(" active", "");
-    }
-    // document.getElementById(cityName).style.display = "block";
-    evt.currentTarget.className += " active";
+    
   }
 
   logout() {
