@@ -2,8 +2,22 @@ from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 from lib.check_passw import check_user
 from controller.user import User
+from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI()
+
+origins = [
+    "http://localhost:4200",
+    # Agrega aquí otros orígenes permitidos si los tienes
+]
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 # Modelo de datos para el request del login
 class UserLogin(BaseModel):

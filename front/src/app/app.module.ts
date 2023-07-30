@@ -11,6 +11,8 @@ import { TableAndParametersComponent } from './views/table-and-parameters/table-
 import { FooterComponent } from './components/footer/footer.component';
 import { HeaderComponent } from './components/header/header.component';
 import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -25,6 +27,8 @@ import { CommonModule } from '@angular/common';
   ],
   imports: [
     BrowserModule,
+    FormsModule,
+    HttpClientModule,
     CommonModule,
     AppRoutingModule
   ],
