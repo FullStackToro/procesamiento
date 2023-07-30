@@ -28,15 +28,3 @@ class HandleDB():
 
     def __del__(self):
         self._con.close()
-
-db = HandleDB()
-data = {
-    "id":1,
-    "firstname": "Gregory",
-    "lastname": "Vicent",
-    "username": "dudadedu",
-    "password_user": "12345"
-}
-#db.insert(data)
-
-print(db.get_all())
