@@ -27,6 +27,11 @@
     .tables
     ```
 
+- Crear nuevas tablas 
+    ```bash 
+    CREATE TABLE medidores(nro_boleta TEXT, nro_cliente TEXT, fecha_emision TEXT, consumo_kWh TEXT,potencia_kW TEXT,  total_a_pagar TEXT);
+    ```
+
 
 
 
